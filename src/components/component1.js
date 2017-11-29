@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Component1 = ({ onClickButton, button1Text, button2Text, xxx, reducer1State, reducer2State }) => {
+const Component1 = ({ onClickButton, button1Text, button2Text, component1Props, reducer1State, reducer2State }) => {
 
   return (
     <div>
@@ -16,7 +16,7 @@ const Component1 = ({ onClickButton, button1Text, button2Text, xxx, reducer1Stat
       >
         {button2Text}
       </button>
-      <p>{xxx}</p>
+      <p>{component1Props}</p>
       <p>reducer1State: {reducer1State}</p>
       <p>reducer2State: {reducer2State}</p>
     </div>

@@ -2,12 +2,12 @@ import { connect } from 'react-redux'
 import Component1 from '../components/component1'
 import { stringAction } from '../actions'
 
-//Hier gehen die daten NACH Link als Props
-//Der state wurde vom store an alle seine children durchgereicht
+//This is where state is catched (from the void) and copied over to the properties 
+//of Component1
 const mapStateToProps = (state, container1Props) => ({
     button1Text: "Button1",
     button2Text: "Button2",
-    xxx: container1Props.filter,
+    component1Props: container1Props.filter,
     reducer1State: state.Reducer1,
     reducer2State: state.Reducer4[0].name
 })
