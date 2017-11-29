@@ -1,18 +1,18 @@
 import React from 'react'
 
-const Component1 = ({ onClickButton1, onClickButton2, button1Text, button2Text, xxx, reducer1State, reducer2State }) => {
+const Component1 = ({ onClickButton, button1Text, button2Text, xxx, reducer1State, reducer2State }) => {
 
   return (
     <div>
       {/* onClick ist ein Property des <a>-Elementes
       //onClickToLink ist die Funktion aus dem Container FilterLInk */}
       <button
-        onClick={onClickButton1}
+        onClick={() => onClickButton("action1TextComponent")}
       >
         {button1Text}
       </button>
       <button
-        onClick={onClickButton2}
+        onClick={() => onClickButton("action2TextComponent")}
       >
         {button2Text}
       </button>
