@@ -21,7 +21,9 @@ const exampleReducer1 = (state = defaultState1, action) => {
     }
   }
 
-  const exampleReducer2 = (state = defaultState2, action) => {
+  const defaultState3 = false
+
+  const exampleReducer2 = (state = defaultState3, action) => {
       switch (action.type) {
         case 'SET_VISIBILITY_FILTER':
           return action.filter
